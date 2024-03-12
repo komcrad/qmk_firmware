@@ -16,7 +16,7 @@
 
 #include QMK_KEYBOARD_H
 
-enum planck_layers { _QWERTY, _COLEMAK, _DVORAK, _LOWER, _RAISE, _PLOVER, _ADJUST };
+enum planck_layers { _QWERTY, _COLEMAK, _DVORAK, _LOWER, _RAISE, _PLOVER, _ADJUST, _VIM};
 
 enum planck_keycodes { QWERTY = SAFE_RANGE, COLEMAK, DVORAK, PLOVER, BACKLIT, EXT_PLV };
 
@@ -151,6 +151,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, EE_CLR,  MU_NEXT, AU_ON,   AU_OFF,  AG_NORM, AG_SWAP, QWERTY,  COLEMAK, DVORAK,  PLOVER,  _______,
     _______, AU_PREV, AU_NEXT, MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
+),
+
+[_VIM] = LAYOUT_planck_grid(
+    _______, _______, _______, _______, _______, _______, _______, _______, _______,     _______,  _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, _______, TO(_QWERTY), _______,  _______, _______,
+    _______, _______, KC_DEL,  _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,       KC_RIGHT, _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, _______, _______,     _______,  _______, _______
 )
 
 };
