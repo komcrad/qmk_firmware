@@ -155,13 +155,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_ADJUST] = LAYOUT_planck_grid(
     _______, QK_BOOT, DB_TOGG, RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_DEL ,
-    _______, EE_CLR,  MU_NEXT, AU_ON,   AU_OFF,  TO(_QWERTYMAC), TO(_QWERTY), QWERTY,  COLEMAK, DVORAK,  PLOVER,  _______,
+    _______, EE_CLR,  MU_NEXT, AU_ON,   AU_OFF,  DF(_QWERTYMAC), DF(_QWERTY), QWERTY,  COLEMAK, DVORAK,  PLOVER,  _______,
     _______, AU_PREV, AU_NEXT, MU_ON,   MU_OFF,  MI_ON,   MI_OFF,  _______, _______, _______, _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
 ),
 
 [_VIM] = LAYOUT_planck_grid(
-    _______, _______, _______, _______, _______, _______, _______, _______, TO(_QWERTY), _______,  _______, _______,
+    _______, _______, _______, _______, _______, _______, _______, _______, TO(0), _______,  _______, _______,
     _______, _______, _______, _______, _______, _______, KC_LEFT, KC_DOWN, KC_UP,       KC_RIGHT, _______, _______,
     _______, _______, KC_DEL,  _______, _______, _______, _______, _______, _______,     _______,  _______, _______,
     _______, _______, _______, _______, _______, _______, _______, _______, _______,     _______,  _______, _______
